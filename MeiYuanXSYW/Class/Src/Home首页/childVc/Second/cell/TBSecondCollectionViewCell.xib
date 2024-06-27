@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TBSecondCollectionViewCell" customModule="MeiYuanXSYW" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="68" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="68" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bM-tN-k7x">
+                        <rect key="frame" x="0.0" y="0.0" width="68" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在抢" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iK9-lx-c9D">
+                        <rect key="frame" x="0.0" y="26" width="68" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="yJg-0C-sPa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="3bM-tN-k7x" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8KX-1s-zrX"/>
+                <constraint firstItem="iK9-lx-c9D" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="B6g-pH-Rn3"/>
+                <constraint firstItem="3bM-tN-k7x" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JT6-dC-feX"/>
+                <constraint firstAttribute="trailing" secondItem="iK9-lx-c9D" secondAttribute="trailing" id="nWM-wc-8AW"/>
+                <constraint firstAttribute="trailing" secondItem="3bM-tN-k7x" secondAttribute="trailing" id="ngz-hB-zWb"/>
+                <constraint firstAttribute="bottom" secondItem="iK9-lx-c9D" secondAttribute="bottom" id="zMd-65-Nyh"/>
+            </constraints>
+            <connections>
+                <outlet property="secondStatusLabel" destination="iK9-lx-c9D" id="0mc-CX-ekD"/>
+                <outlet property="secondTimeLabel" destination="3bM-tN-k7x" id="Kws-hj-vO2"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="109.82142857142857"/>
+        </collectionViewCell>
+    </objects>
+</document>

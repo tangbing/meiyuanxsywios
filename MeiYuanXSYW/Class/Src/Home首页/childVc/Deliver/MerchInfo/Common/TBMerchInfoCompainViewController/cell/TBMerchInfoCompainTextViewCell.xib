@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TBMerchInfoCompainTextViewCell" customModule="MeiYuanXSYW" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EmC-Z0-XhT">
+                        <rect key="frame" x="10" y="0.0" width="300" height="240"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Cql-QY-CAk" customClass="QMUITextView">
+                                <rect key="frame" x="15" y="10" width="270" height="190"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maximumTextLength">
+                                        <integer key="value" value="200"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder">
+                                        <string key="value">请详细描述您投诉的内容（字数10字以上，200字以内）
+</string>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.70196078429999997" green="0.70196078429999997" blue="0.70196078429999997" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="KGk-i7-Jjw" id="PuI-Js-sh1"/>
+                                </connections>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/200" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvJ-In-BSb">
+                                <rect key="frame" x="253.5" y="210" width="36.5" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="3yC-cL-E6H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.70196078429999997" green="0.70196078429999997" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="tvJ-In-BSb" secondAttribute="bottom" constant="10" id="9YM-90-wxW"/>
+                            <constraint firstAttribute="trailing" secondItem="tvJ-In-BSb" secondAttribute="trailing" constant="10" id="NCb-jk-ebz"/>
+                            <constraint firstItem="Cql-QY-CAk" firstAttribute="top" secondItem="EmC-Z0-XhT" secondAttribute="top" constant="10" id="PSh-iS-eg3"/>
+                            <constraint firstItem="tvJ-In-BSb" firstAttribute="top" secondItem="Cql-QY-CAk" secondAttribute="bottom" constant="10" id="a5s-kM-Nvh"/>
+                            <constraint firstItem="Cql-QY-CAk" firstAttribute="leading" secondItem="EmC-Z0-XhT" secondAttribute="leading" constant="15" id="hQ6-Em-oaj"/>
+                            <constraint firstAttribute="trailing" secondItem="Cql-QY-CAk" secondAttribute="trailing" constant="15" id="uKI-Oh-Av3"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EmC-Z0-XhT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="G8d-fP-hwZ"/>
+                    <constraint firstItem="EmC-Z0-XhT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Lfn-N1-T69"/>
+                    <constraint firstAttribute="trailing" secondItem="EmC-Z0-XhT" secondAttribute="trailing" constant="10" id="RSK-tI-lj6"/>
+                    <constraint firstAttribute="bottom" secondItem="EmC-Z0-XhT" secondAttribute="bottom" id="W4Q-no-j8q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="containerView" destination="EmC-Z0-XhT" id="fYd-l7-ufK"/>
+                <outlet property="limitLabel" destination="tvJ-In-BSb" id="VSB-zj-7CN"/>
+                <outlet property="textView" destination="Cql-QY-CAk" id="MfM-0r-kyp"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="122.54464285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

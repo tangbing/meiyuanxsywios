@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="XSUploadPicCollectionViewCell" customModule="MeiYuanXSYW" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_longpass" translatesAutoresizingMaskIntoConstraints="NO" id="OWq-Mo-7lS">
+                        <rect key="frame" x="0.0" y="10" width="75" height="75"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sc8-bK-Mow">
+                        <rect key="frame" x="66" y="0.0" width="19" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="qvr-TD-Gcu"/>
+                            <constraint firstAttribute="width" constant="19" id="zUU-J9-p0w"/>
+                        </constraints>
+                        <state key="normal" image="mine_icon_delete"/>
+                        <connections>
+                            <action selector="deleteButtonClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="mGm-2S-iPn"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传图片最多6张" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygq-zE-kNL">
+                        <rect key="frame" x="15" y="53.5" width="45" height="26.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.45098039215686275" green="0.45098039215686275" blue="0.45098039215686275" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ygq-zE-kNL" secondAttribute="trailing" constant="25" id="6gt-Ay-4oe"/>
+                <constraint firstAttribute="trailing" secondItem="OWq-Mo-7lS" secondAttribute="trailing" constant="10" id="75J-Wm-vEU"/>
+                <constraint firstItem="OWq-Mo-7lS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8Qw-eK-qnd"/>
+                <constraint firstItem="OWq-Mo-7lS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Ctz-9p-nvt"/>
+                <constraint firstItem="Ygq-zE-kNL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="HKb-Pl-nQM"/>
+                <constraint firstAttribute="trailing" secondItem="Sc8-bK-Mow" secondAttribute="trailing" id="ZwZ-9C-b3g"/>
+                <constraint firstItem="Sc8-bK-Mow" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="lg0-yA-hKz"/>
+                <constraint firstAttribute="bottom" secondItem="OWq-Mo-7lS" secondAttribute="bottom" id="t5K-pm-hkD"/>
+                <constraint firstAttribute="bottom" secondItem="Ygq-zE-kNL" secondAttribute="bottom" constant="5" id="utN-gG-MGk"/>
+            </constraints>
+            <connections>
+                <outlet property="deleteButton" destination="Sc8-bK-Mow" id="unz-Py-1Ab"/>
+                <outlet property="msgLabel" destination="Ygq-zE-kNL" id="6Az-ZO-TiP"/>
+                <outlet property="picImagView" destination="OWq-Mo-7lS" id="cmF-6r-MBk"/>
+            </connections>
+            <point key="canvasLocation" x="131.15942028985509" y="101.45089285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="mine_icon_delete" width="19" height="19"/>
+        <image name="mine_longpass" width="75" height="75"/>
+    </resources>
+</document>

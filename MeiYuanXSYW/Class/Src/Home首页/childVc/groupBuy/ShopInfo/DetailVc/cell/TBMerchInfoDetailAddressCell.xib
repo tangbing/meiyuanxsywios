@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TBMerchInfoDetailAddressCell" customModule="MeiYuanXSYW" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="巴黎世家甜品工作室（罗湖店）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZj-f8-HfF">
+                    <rect key="frame" x="55" y="15" width="200" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="707-dO-qtB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <color key="textColor" red="0.14509803921568626" green="0.14509803921568626" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="罗湖桂园路255国贸商城5层452号" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zca-RR-JOZ">
+                    <rect key="frame" x="55" y="42" width="349" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.45098039215686275" green="0.45098039215686275" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLE-uD-BHY">
+                    <rect key="frame" x="377" y="12" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="IHh-Pd-3Wb"/>
+                        <constraint firstAttribute="height" constant="22" id="fv3-96-aAe"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="merch_info_telephone"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vo8-a3-8et">
+                    <rect key="frame" x="345" y="12" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="8i6-4f-1en"/>
+                        <constraint firstAttribute="height" constant="22" id="GhG-oz-fus"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="merch_info_location"/>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2gK-Sl-w0n">
+                    <rect key="frame" x="10" y="13" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="9tn-mB-xnY"/>
+                        <constraint firstAttribute="height" constant="40" id="lsd-2g-UVZ"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vo8-a3-8et" firstAttribute="centerY" secondItem="eLE-uD-BHY" secondAttribute="centerY" id="56l-LG-HqV"/>
+                <constraint firstItem="zca-RR-JOZ" firstAttribute="leading" secondItem="fZj-f8-HfF" secondAttribute="leading" id="6UT-N8-GpR"/>
+                <constraint firstAttribute="bottom" secondItem="zca-RR-JOZ" secondAttribute="bottom" constant="9.5" id="9dH-nZ-pgb"/>
+                <constraint firstAttribute="trailing" secondItem="zca-RR-JOZ" secondAttribute="trailing" constant="10" id="ABk-xU-b8W"/>
+                <constraint firstItem="2gK-Sl-w0n" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="N1K-F0-Rkq"/>
+                <constraint firstItem="eLE-uD-BHY" firstAttribute="leading" secondItem="vo8-a3-8et" secondAttribute="trailing" constant="10" id="SUg-dk-7q4"/>
+                <constraint firstItem="zca-RR-JOZ" firstAttribute="top" secondItem="fZj-f8-HfF" secondAttribute="bottom" constant="10" id="WHL-M8-SzJ"/>
+                <constraint firstItem="fZj-f8-HfF" firstAttribute="leading" secondItem="2gK-Sl-w0n" secondAttribute="trailing" constant="5" id="ZFH-ba-K14"/>
+                <constraint firstItem="eLE-uD-BHY" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-10" id="cNO-ei-bOj"/>
+                <constraint firstItem="2gK-Sl-w0n" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="hEU-gh-zIT"/>
+                <constraint firstAttribute="trailing" secondItem="eLE-uD-BHY" secondAttribute="trailing" constant="15" id="lo9-SB-iSc"/>
+                <constraint firstItem="fZj-f8-HfF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="wJV-N7-nxE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="guideButton" destination="vo8-a3-8et" id="bp0-Q5-vI6"/>
+                <outlet property="merchAddressLab" destination="zca-RR-JOZ" id="PLg-z6-wWy"/>
+                <outlet property="merchLogo" destination="2gK-Sl-w0n" id="Dd1-pi-eXj"/>
+                <outlet property="merchLogoW" destination="9tn-mB-xnY" id="i5e-MC-Khr"/>
+                <outlet property="merchNameLab" destination="fZj-f8-HfF" id="Xhy-lh-MPO"/>
+                <outlet property="telephoneButton" destination="eLE-uD-BHY" id="AdO-Ek-KVW"/>
+            </connections>
+            <point key="canvasLocation" x="-164" y="80"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="merch_info_location" width="22" height="22"/>
+        <image name="merch_info_telephone" width="22" height="22"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
